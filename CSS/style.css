@@ -1,0 +1,47 @@
+body {
+  background-color: #fff6f5;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Brightsome Free Personal Use", Arial, sans-serif;
+}
+
+.title * {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  background-color: #849c46;
+}
+
+li {
+  padding: 30px 20px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  height: 400px;
+}
+
+.main > div {
+  float: left;
+}
+
+.main > figure {
+  float: right;
+}

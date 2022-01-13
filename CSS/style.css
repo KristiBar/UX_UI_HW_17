@@ -1,18 +1,59 @@
+@font-face {
+  font-family: Brightsome;
+  src: url("fonts/BrightsomeFreePersonalUse.otf") /*format("otf")*/;
+}
+
 body {
   background-color: #fff6f5;
+  padding: 0;
+  margin: 0;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
-header {
+.container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: [row1-start] 274px [row2-start] 63px [row3-start] 550px [row4-start] 548px [row5-start] 456px [row6-start] 183px [row6-end];
+}
+
+.top-line img {
+  width: 163px;
+  height: 163px;
+}
+
+.title {
+  grid-column: 1 / 2;
+  grid-row: row1-start / row2-start;
   text-align: center;
 }
 
-h1 {
-  font-family: "Brightsome Free Personal Use", Arial, sans-serif;
+.top_line * {
+  display: inline-block;
+  font-family: Brightsome;
 }
 
-.title * {
+.top_line img {
+  margin-bottom: -12px;
+}
+
+.tag-line {
+  font-size: 16px;
+}
+
+p,
+ol {
+  font-size: 24px;
+}
+
+ol {
   display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  font-family: Brightsome, Arial, sans-serif;
 }
 
 nav a {
@@ -23,25 +64,197 @@ nav a {
 ul {
   list-style: none;
   background-color: #849c46;
+  display: flex;
+  margin: 0;
+  height: 100%;
+  padding-left: 235px;
 }
 
 li {
-  padding: 30px 20px;
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
+  padding: 23px 27px;
+  display: inline-block;
+  align-content: flex-end;
+}
+
+.info {
+  height: 300px;
+  margin: 75px 53px 75px 200px;
+  padding: 45px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.info h2 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.images {
+  grid-column: 2 / 3;
+  grid-row: row3-start / row4-start;
+  text-align: center;
+}
+
+.images_inner {
+  display: inline-block;
+  width: 480px;
+  text-align: left;
+}
+
+.images img {
+  width: 290px;
+  height: 402px;
+}
+
+.sunflowers img {
+  width: 223px;
+  height: 310px;
+}
+
+.ziplining img {
+  width: 240px;
+  height: 274px;
+}
+
+figure {
   display: inline-block;
 }
 
-a {
-  text-decoration: none;
+.sunflowers,
+.ziplining {
+  position: absolute;
 }
 
-.main {
-  height: 400px;
+.sunflowers {
+  transform: translate(200px, -200px);
 }
 
-.main > div {
-  float: left;
+.ziplining {
+  transform: translate(200px, 200px);
 }
 
-.main > figure {
-  float: right;
+.headshot {
+  position: relative;
+  z-index: 2;
+  margin: -10px;
+}
+
+figcaption {
+  color: #849c46;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.work {
+  background-color: #596a2f;
+  padding: 80px 0;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+}
+
+.box-right {
+  background-color: #c0b633;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0;
+}
+
+.posiloop img {
+  width: 200px;
+  height: 418.45px;
+}
+
+.container-2 {
+  background-color: #f2b9ac;
+  text-align: center;
+  padding: 70px 0;
+  margin: 0;
+}
+
+.seedling img {
+  width: 400px;
+  height: 269px;
+}
+
+.box-right-2 {
+  background-color: #f2b9ac;
+  padding: 90px 0;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.box-right-2 p {
+  text-align: left;
+  display: inline-block;
+}
+
+footer {
+  background-color: #849c46;
+  display: flex;
+  position: relative;
+}
+
+footer img {
+  width: 32px;
+  height: 32px;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 15px 20px;
+}
+
+td * {
+  vertical-align: middle;
+}
+
+.copyRight {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+.letsConnect {
+  grid-column: 2 / 3;
+  grid-row: row6-start / row6-end;
+  text-align: center;
+  color: #596a2f;
+}
+
+.letsConnect * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profile img {
+  width: 136 px;
+  height: 136px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: block;
+  }
+
+  .images_inner {
+    width: initial;
+  }
+
+  .sunflowers,
+  .ziplining {
+    display: none;
+  }
 }

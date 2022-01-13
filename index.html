@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      @import url('http://fonts.cdnfonts.com/css/brightsome-free-personal-use');
-    </style>
-                
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>Kristi's Portfolio</title>
   </head>
-  <title>Kristi's Portfolio</title>
   <body>
-    <header>
+    <div class="container">
+
       <div class="title">
-        <img src="images/LogoHead.jpeg" alt="Logo" width="100px"/>
-        <h1>Kristi Bar Design</h1>
+        <div class="top_line">
+          <img src="images/LogoHead.jpeg" alt="Logo" width="100px" />
+          <h1>Kristi Bar Design</h1>
+        </div>
+        <div class="tag-line">
+          Creating thoughtfully researched, tested,<br />& well executed designs.
+        </div>
       </div>
-      <p>Creating thoughtfully researched, tested,<br>& well executed designs.</p>
+
+      <div class="empty1"></div>
+
       <nav>
         <ul>
           <li>
@@ -34,9 +38,10 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <section class="main">
-      <div>
+
+      <div class="empty2"></div>
+
+      <div class="info">
         <h2>Welcome, I'm Kristi.</h2>
         <p>
           A professional with experience in the high-tech<br />
@@ -46,86 +51,115 @@
           to create inspiring experiences!
         </p>
       </div>
-      <figure>
-        <img src="images/Sunflowers.jpg"
-          alt="Kristi in sunflower field with her daughters ages 13 & 6"
-        />
-        <figcaption>DEVOTED MOM</figcaption>
-      </figure>
-      <figure>
-        <img src="images/Ziplining.jfif"
-          alt="Kristi & her 13 year old daugher with gear on ready to go ziplining"
-        />
-        <figcaption>OUTDOOR ENTHUSIAST</figcaption>
-      </figure>
-      <fig>
-        <img src="images/KristiHeadshot.jpg"
-          alt="Close up of Kristi holding a puppy"
-        />
-        <figcaption>ANIMAL LOVER</figcaption>
-      </fig>
-    </section>
-    <section>
-      <div class="container-1">
-        <div class="box-left">
+
+      <div class="images">
+
+        <div class="images_inner">
+          <figure class="sunflowers">
+            <img
+              src="images/Sunflowers.jpg"
+              alt="Kristi in sunflower field with her daughters ages 13 & 6"
+            />
+            <figcaption>DEVOTED MOM</figcaption>
+          </figure>
+          <figure class="ziplining">
+            <img
+              src="images/Ziplining.jfif"
+              alt="Kristi & her 13 year old daugher with gear on ready to go ziplining"
+            />
+            <figcaption>OUTDOOR ENTHUSIAST</figcaption>
+          </figure>
+          <figure class="headshot">
+            <img
+              src="images/KristiHeadshot.jpg"
+              alt="Close up of Kristi holding a puppy"
+            />
+            <figcaption>ANIMAL LOVER</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+    
+      <div class="work">
         <h2>WORK</h2>
-        <ul>
+        <ol>
           <li>
-            Team project creating a brand-new mobile app prototype<br />
-            to solve a real world problem.
+            Team project creating a brand-new mobile app prototype<br />to solve
+            a real world problem.
           </li>
           <li>
             Team project redesigning a local nonprofit's website &<br />
-            mobile app
+            mobile app.
           </li>
           <li>Individual project redesigning a government website.</li>
-        </ul>
+        </ol>
       </div>
+
       <div class="box-right">
-      <img src="images/PosiloopScreenShot.JPG"
-        alt="Screen shot of homepage of Group 1 Project Prototype"
-      />
+        <figure class="posiloop">
+          <img src="images/PosiloopScreenShot.JPG"
+          alt="Screen shot of homepage of Group 1 project prototype"
+          />
       </div>
-    <section>
+
       <div class="container-2">
         <div class="box-left">
-        <img src="images/HoldingSeedling.jpeg" alt="Hands holding seedling plant" />
+          <figure class="seedling">
+            <img src="images/HoldingSeedling.jpeg" alt="Hands holding seedling plant"/>
+        </div>
       </div>
-      <div class="box-right">
+
+      <div class="box-right-2">
         <h2>SKILLS</h2>
-        <p>
-          There are many ways to be creative! Designing<br />
-          experiences for users or planting and growing a garden<br />
-          are just a couple of my favorites.
-        </p>
+        <p>There are many ways to be creative! Designing<br>
+        experiences for users or planting and growing a garden<br>
+      are just a couple of my favorites.</p>
       </div>
-    </section>
-    <footer>
-      <section>
-        <ul>
-          <li>
-            <img src="images/mobilePhone.png" alt="mobilePhone">
-            (206) 353-5227
-          </li>
-          <li>
-            <img src="images/Envelope.png" alt="envelope">
-            kristibar6@gmail.com
-          </li>
-          <li>
-            <img src="images/city.png" alt="City">
-            Portland Metropolitan Area
-          </li>
-          <li>
-            <img src="images/Desktop Monitor.png" alt="Monitor">
-            kristibar.com
-          </li>
-          <li>
-            <img src="images/Linkedin.png" alt="LinkedIn">
-            www.linkedin.com/in/kristi-bar
-          </li>
-        </ul>
-        <p>Copyright 2022</p>
-      </section>
-    </footer>
+  
+
+      <footer>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/mobilePhone.png" alt="mobile phone">
+                <span>(206) 353-5227</span>
+              </td>
+              <td>
+                <img src="images/Envelope.png" alt="evelope">
+                <span>kristibar6@gmail.com </span>
+              </td>
+              <td>
+                <img src="images/city.png" alt="city">
+                <span>Portland Metropolitan Area</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Desktop Monitor.png" alt="desktop monitor">
+                <span>kristibar.com</span>
+              </td>
+              <td>
+                <img src="images/Linkedin.png" alt="LinkedIn">
+                <span>www.linkedin.com/in/kristi-bar</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="copyRight">Copyright 2022</div>
+
+      </footer>
+
+        <div class="letsConnect">
+          <figure class="profile">
+            <img src="images/LetsConnect.gif" alt="Gif of Profile">
+          </figure>
+            <h2>LET'S<br> CONNECT!</h2>
+        </div>
+    </div>
   </body>
 </html>
